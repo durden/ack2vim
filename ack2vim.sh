@@ -150,7 +150,7 @@ ash () {
     ack --shell "$@"
 }
 
-VACK_DIR=$(dirname $(readlink -f $BASH_SOURCE))
+VACK_DIR=$(dirname $BASH_SOURCE)
 
 ack () {
     python -c "print '\n\033[0;36m%s\033[0m\n' % ('#' * $(tput cols))"
