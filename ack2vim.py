@@ -146,7 +146,7 @@ def as_vim_args(args):
 
 
 def as_vim_command(vim_args, path_to_file):
-    return 'vim %s +/%s' % (path_to_file, vim_args)
+    return 'mvim %s +/%s' % (path_to_file, vim_args)
 
 
 def as_vim_commands(args, paths_to_files):
